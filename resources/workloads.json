@@ -1,0 +1,41 @@
+{
+  "smallput": {
+    "put_tester": 10
+  },
+
+  "mediumput": {
+    "put_tester": 50
+  },
+
+  "bigput": {
+    "put_tester": 100
+  },
+
+  "smallget": {
+    "get_tester": 10
+  },
+
+  "mediumget": {
+    "get_tester": 50
+  },
+
+  "bigget": {
+    "get_tester": 100
+  },
+
+  "smallhalves": {
+    "get_tester": 5,
+    "put_tester": 5
+  },
+
+  "mediumhalves": {
+    "get_tester": 25,
+    "put_tester": 25
+  },
+
+  "bighalves": {
+    "get_tester": 50,
+    "put_tester": 50
+  }
+}
+

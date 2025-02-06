@@ -1,0 +1,121 @@
+{
+    "someaccount": {
+        "password": "somepassword",
+        "operations": [
+            {
+                "command": "put",
+                "args": {"key1": "bytevalue1"}
+            },
+            {
+                "command": "multiput",
+                "args": {
+                    "key1": "bytevalue1",
+                    "key2": "bytevalue2",
+                    "key3": "bytevalue3",
+                    "key4": "bytevalue4",
+                    "key5": "bytevalue5",
+                    "key6": "bytevalue6"
+                }
+            },
+            {
+                "command": "get",
+                "args": "key1"
+            },
+            {
+                "command": "multiget",
+                "args": ["key1", "key2", "key3", "key4", "key5", "key6"]
+            }
+        ]
+    },
+    
+    "put_tester": {
+        "password": "put_tester_password",
+        "repeat": 5000,
+        "operations": [
+            {
+                "command": "put",
+                "args": {"key1": "value1"}
+            },
+            {
+                "command": "put",
+                "args": {"key2": "value2"}
+            },
+            {
+                "command": "put",
+                "args": {"key3": "value3"}
+            },
+            {
+                "command": "put",
+                "args": {"key4": "value4"}
+            },
+            {
+                "command": "put",
+                "args": {"key5": "value5"}
+            },
+            {
+                "command": "put",
+                "args": {"key6": "value6"}
+            }
+        ]
+    },
+
+    "multiput_tester": {
+        "password": "multiput_tester_password",
+        "repeat": 9000,
+        "operations": [
+            {
+                "command": "multiput",
+                "args": {
+                    "key1": "bytevalue1",
+                    "key2": "bytevalue2",
+                    "key3": "bytevalue3",
+                    "key4": "bytevalue4",
+                    "key5": "bytevalue5",
+                    "key6": "bytevalue6"
+                }
+            }
+        ]
+    },
+
+    "get_tester": {
+        "password": "get_tester_password",
+        "repeat": 4000,
+        "operations": [
+            {
+                "command": "get",
+                "args": "key1"
+            },
+            {
+                "command": "get",
+                "args": "key2"
+            },
+            {
+                "command": "get",
+                "args": "key3"
+            },
+            {
+                "command": "get",
+                "args": "key4"
+            },
+            {
+                "command": "get",
+                "args": "key5"
+            },
+            {
+                "command": "get",
+                "args": "key6"
+            }
+        ]    
+    },
+
+    "multiget_tester": {
+        "password": "multiget_tester_password",
+        "repeat": 9000,
+        "operations": [
+            {
+                "command": "multiget",
+                "args": ["key1", "key2", "key3", "key4", "key5", "key6"]
+            }
+        ]
+    }
+}
